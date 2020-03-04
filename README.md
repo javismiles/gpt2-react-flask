@@ -1,12 +1,15 @@
 # How to generate text with OpenAI's GPT-2, React and Flask
 
+## Fork Intro
+
+In this fork, I´m focusing on the deployment process using systemd and Gunicorn in combination with Flask and React. A description will be coming shortly
+
+
 ## Introduction
 
 In this tutorial, we'll build a Flask & React app with GPT-2 capabilities. We'll go step by step, by tweaking the generator's _"interface"_, then we'll build the Flask server and finally the React frontend.
 
 By the end of this tutorial, here's what our app should look like:
-
-![GPT-2 Generator with React & Flask](./screenshot.png)
 
 ## Generating text with GPT-2
 
