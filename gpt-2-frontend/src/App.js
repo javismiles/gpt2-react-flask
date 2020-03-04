@@ -17,7 +17,8 @@ function App() {
   return (
     <div className='app-container'>
       <form noValidate autoComplete='off'>
-        <h1>React GPT-2</h1>
+        <h1>GPT-2 API yeah</h1>
+        <h4>for now only the small gpt2 version is active</h4>
         <SelectBox model={model} setModel={setModel} />
         <TextBox text={text} setText={setText} />
         <Button onClick={generateText} />

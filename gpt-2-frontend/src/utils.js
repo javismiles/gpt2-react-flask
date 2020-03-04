@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-const ENDPOINT_URL = "http://localhost:5000/generate";
+const ENDPOINT_URL = "https://gpt2.volandino.com/generate";
 
 const useAsyncEndpoint = fn => {
     const [res, setRes] = React.useState({ data: null, complete: false, pending: false, error: false });

@@ -1,6 +1,7 @@
 {
   "name": "gpt-2-frontend",
   "version": "0.1.0",
+  "homepage" : "https://torch4ideas.com/gpt2",
   "dependencies": {
     "@material-ui/core": "^4.4.2",
     "axios": "^0.19.0",

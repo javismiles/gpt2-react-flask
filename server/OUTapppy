@@ -4,7 +4,7 @@
 from flask import Flask, abort, jsonify, request
 from flask_cors import CORS, cross_origin
 
-from package.run_generation import generate_text
+from .run_generation import generate_text
 
 application = Flask(__name__)
 cors = CORS(application)
@@ -13,13 +13,13 @@ application.config['CORS_HEADERS'] = 'Content-Type'
 
 @application.route('/')
 def hello_world():
-    return "Flask gpt-2 api installed here by ideami"
+    return "Hello, World!"
 
 
 @application.route('/tellme')
 @cross_origin()
 def tellme():
-    return "Hispania rocks"
+    return "saledale!"
 
 @application.route("/generate", methods=['POST'])
 @cross_origin()
@@ -34,7 +34,7 @@ def get_gen():
         
         result =  "I love this: "+text
 
-        #return jsonify({'result': result})
+        return jsonify({'result': result})
 
         result = generate_text(
             model_type='gpt2',
