@@ -1,0 +1,5 @@
+Gunicorn
+flask
+pytorch-transformers
+flask_cors
+
